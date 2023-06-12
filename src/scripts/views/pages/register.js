@@ -8,6 +8,8 @@ const RegisterPage = {
   },
 
   async afterRender() {
+    const headerBg = document.querySelector('header');
+    headerBg.classList.add('remove-background');
     const main = document.getElementById('maincontent');
     const section = document.createElement('section');
     section.setAttribute('tabindex', '0');

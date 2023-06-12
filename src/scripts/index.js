@@ -1,4 +1,9 @@
 import 'regenerator-runtime'; /* for async await transpile */
+import './components/header'
+import './components/about'
+import './components/why-us'
+import './components/FAQ'
+import './components/team-section'
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/style.scss';
