@@ -1,5 +1,9 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
+import '../styles/responsive.css';
+import '../styles/style.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 import App from './views/app';
 
 const hamburgerButtonElement = document.querySelector('#hamburger');

@@ -1,0 +1,71 @@
+/*Responsive Breakpoint*/
+
+/*Ukuran Mobile*/
+@media screen and (max-width:576px){
+    .wu-box {      
+        position: relative;
+        padding: 10px;
+        box-shadow: 3px 3px 2px #d0d0d0, -3px -3px 2px #f8f8f8;
+        border-radius: 10px;
+        transition: .3s ease;
+        z-index: 100;
+        min-height: 150px;
+      }
+
+    .why-us-title {
+        font-size: large;
+    }  
+
+    .why-us-text {
+        font-size:small;
+    }
+
+    .dropdown-master{
+        width:95%;
+    }
+
+    h4.text-white {
+        font-size: larger;
+    }
+}
+  
+@media screen and (min-width: 650px) {
+    .wu-box {
+        min-height: 160px;
+      }
+
+    .why-use-text{
+        font-size:14px;
+    }  
+
+    .why-use-title {
+        font-size:17px;
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .wu-box {
+        max-height:275px;
+    }
+}
+  
+@media screen and (min-width:900px) {
+    .wu-box {
+        position: relative;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        z-index: 100;
+        min-height: 200px;
+        max-height:280px;
+      }   
+}
+
+@media screen and (min-width:1200px){
+    .about, .why-us {
+        max-width: 1200px;
+        }   
+    
+ 
+}
+  

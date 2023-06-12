@@ -1,8 +1,8 @@
 {
-    "id": "restaurant-catalogue-lite-pwa-1",
+    "id": "grave-discover-lite-pwa-1",
     "start_url": "./index.html",
-    "name": "Restaurant Catalogue Lite",
-    "short_name": "Restaurant Lite",
+    "name": "Grave Discover Lite",
+    "short_name": "GraveDiscover Lite",
     "description": "Free Catalogue Restaurant for you",
     "display": "standalone",
     "background_color": "#FFFFFF",
