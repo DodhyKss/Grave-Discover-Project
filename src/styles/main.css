@@ -15,6 +15,23 @@ main {
   margin: 32px auto;
 }
 
+//skip-to-content-button
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+ 
+.skip-to-content:focus {
+   top: 0;
+}
+
+
+
 /* // Navbar */
 .navbar {
   background-color: transparent !important;
@@ -119,6 +136,14 @@ main {
 
 
 /* //Jumbohero */
+.remove-background {
+  background-image: none !important;
+}
+
+.remove-content {
+  display:none;
+}
+
 .hero {
   position: absolute;
   top: 308px;
