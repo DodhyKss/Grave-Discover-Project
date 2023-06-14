@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 const DataJenazah = {
   async render() {
     return `
@@ -42,18 +41,37 @@ const DataJenazah = {
                 <td>@mdo</td>
                 <td>Mark</td>
                 <td>Otto</td>
-                <td>@mdo</td>
+                <td>
+                <a href="#"><i class="fas fa-edit"></i></a>
+                <a href="#"><i class="fas fa-trash"></i></a>
+              </td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>
+                  <a href="#"><i class="fas fa-edit"></i></a>
+                  <a href="#"><i class="fas fa-trash"></i></a>
+                </td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td colspan="2">Larry the Bird</td>
                 <td>@twitter</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>
+                  <a href="#"><i class="fas fa-edit"></i></a>
+                  <a href="#"><i class="fas fa-trash"></i></a>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -72,12 +90,14 @@ const DataJenazah = {
 
     const btnTambah = document.getElementById("btnTambah");
     btnTambah.addEventListener("click", () => {
-      import("./form-tambah-data.js")
+      // eslint-disable-next-line import/extensions
+      import("./form-tambah-data")
         .then((module) => {
           const FormTambahData = module.default;
           FormTambahData.loadForm();
         })
         .catch((error) => {
+          // eslint-disable-next-line no-console
           console.error("Gagal memuat halaman formulir:", error);
         });
     });

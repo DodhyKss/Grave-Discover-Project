@@ -7,6 +7,7 @@ import AboutPage from "../views/pages/about";
 import Dashboard from "../views/pages/admin/dashboard";
 import DataJenazah from "../views/pages/admin/data-jenazah";
 import FormTambahData from "../views/pages/admin/form-tambah-data";
+import Pesanan from "../views/pages/admin/pesanan";
 
 const routes = {
   "/": LandingPage,
@@ -18,6 +19,7 @@ const routes = {
   "/dashboard": Dashboard,
   "/data-jenazah": DataJenazah,
   "/form-tambah-data": FormTambahData,
+  "/pesanan": Pesanan,
 };
 
 export default routes;

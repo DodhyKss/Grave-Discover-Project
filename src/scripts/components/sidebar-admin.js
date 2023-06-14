@@ -42,7 +42,7 @@ class SidebarAdmin extends HTMLElement {
                   </a>
                 </li>
                 <li>
-                  <a href="#/pesanan-perawatan">
+                  <a href="#/pesanan">
                     <span class="icon">
                       <i class="fas fa-solid fa-broom" style="color: #f97b22"></i>
                     </span>

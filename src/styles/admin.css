@@ -159,11 +159,13 @@ body {
 }
 
 /* Form */
-.container-form {
-  padding: 25px;
+/* .container-form {
+  margin: 40px;
   height: calc(100% - 60px);
   overflow: auto;
-}
+  padding-left: 30px;
+  padding-right: 30px;
+} */
 
 .btn-submit {
   display: flex;
