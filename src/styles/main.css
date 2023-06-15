@@ -403,7 +403,7 @@ footer {
 }
 
 /* Login */
-
+.container-register,
 .container-login {
   display: flex;
   height: 100%;
@@ -415,6 +415,7 @@ footer {
   background-color: #f6f5f5;
 }
 
+.register-form,
 .login-form {
   margin-top: 5rem;
   background-color: #f6f5f5;
@@ -423,11 +424,26 @@ footer {
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #555;
+  padding-bottom: 40px;
 }
 
+.register-form h3,
 .login-form h3 {
   color: #1d2939;
   font-weight: 500;
+}
+
+.register-input input[type="text"],
+.register-input input[type="password"],
+.register-input input[type="number"] {
+  border-radius: 20px;
+  border: none;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 44px;
+  padding: 3px 10px;
+  margin-top: 10px;
 }
 
 .login-input input[type="text"],
@@ -450,6 +466,7 @@ footer {
   font-size: 4px;
 } */
 
+.register-form .btn-register,
 .login-form .btn-login {
   height: 35px;
   border-radius: 10px;
@@ -463,10 +480,11 @@ footer {
   transition: 0.3s ease;
 }
 
+.register-form .btn-register,
 .login-form .btn-login:hover {
   background-color: #f97b22;
 }
 
 .login-form .link {
-  color: #f97b22;
+  color: #f97b22;
 }
