@@ -5,7 +5,6 @@ const Dashboard = {
   async render() {
     return `
     <sidebar-admin></sidebar-admin>
-    </div>
     <div class="container-admin">
       <div class="content">
         <div>
@@ -51,10 +50,10 @@ const Dashboard = {
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+
           `;
   },
 

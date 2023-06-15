@@ -67,6 +67,7 @@ class SidebarUser extends HTMLElement {
               </div>
               <div class="logo">Grave <span>Discover</span></div>
             </div>
+            
           </div>
         </div>
       </div>
