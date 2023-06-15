@@ -1,10 +1,11 @@
+/* eslint-disable linebreak-style */
 class Header extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <header style="background-image: url('./img/JumboTron.png'); height: 800px;">
 
   <!-- Navbar -->
@@ -18,15 +19,15 @@ class Header extends HTMLElement {
                 <span class="navbar-toggler-icon"></span>
               </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ml-2 ">
+              <ul class="navbar-nav d-flex justify-content-center mb-2 mb-lg-0 ml-2 ">
                 <li class="nav-item"><a class="nav-link" href="#/landing-page">Beranda</a></li>
                 <li class="nav-item"><a class="nav-link">Tentang</a></li>
                 <li class="nav-item"><a class="nav-link">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link">Tim Kami</a></li>
               </ul>
           <div class="d-flex">
-            <button class="btn-masuk btn"><a href="#/login">Masuk</a></button>
-            <button class="btn-daftar btn"><a href="#/register">Daftar</a></button>
+            <button class="btn-masuk"><a href="#/login">Masuk</a></button>
+            <button class="btn-daftar"><a href="#/register">Daftar</a></button>
           </div>
          </div>
         </div>
@@ -44,14 +45,14 @@ class Header extends HTMLElement {
           dunia. Pesan jasa untuk merawat makam orang terkasih dan temukan
           makam mereka dengan kenangan indah yang ditinggalkan di sini.
         </p>
-        <button class="btn-detail btn btn-primary">Detail</button>
+        <button class="btn-detail">Detail</button>
       </div>
     </div>
   </div>
     </div>
 </header>
-        `
-    }
+        `;
+  }
 }
 
 customElements.define('header-page', Header);

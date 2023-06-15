@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { registerTemplate } from '../templates/template-creator';
 
 const RegisterPage = {
@@ -10,6 +11,11 @@ const RegisterPage = {
   async afterRender() {
     const headerBg = document.querySelector('header');
     headerBg.classList.add('remove-background');
+    headerBg.style.height = '120px';
+    headerBg.style.backgroundColor = '#1d2939';
+
+    const heroText = document.getElementById('hero');
+    heroText.remove();
     const main = document.getElementById('maincontent');
     const section = document.createElement('section');
     section.setAttribute('tabindex', '0');

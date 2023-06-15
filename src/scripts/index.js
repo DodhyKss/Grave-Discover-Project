@@ -5,8 +5,10 @@ import './components/why-us'
 import './components/FAQ'
 import './components/team-section'
 import '../styles/main.css';
+import '../styles/user.css';
 import '../styles/responsive.css';
 import '../styles/style.scss';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import App from './views/app';
@@ -29,3 +31,4 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
   app.renderPage();
 });
+

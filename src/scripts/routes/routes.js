@@ -4,6 +4,7 @@ import LoginPage from '../views/pages/login';
 import RegisterPage from '../views/pages/register';
 import AboutPage from '../views/pages/about';
 import User from '../views/pages/user';
+import UserDashboard from '../views/pages/user/user-dashboard';
 
 const routes = {
   '/': LandingPage,
@@ -13,6 +14,7 @@ const routes = {
   '/about': AboutPage,
   '/profile': Profile,
   '/user' : User,
+  '/userdashboard':UserDashboard,
 };
 
 export default routes;
