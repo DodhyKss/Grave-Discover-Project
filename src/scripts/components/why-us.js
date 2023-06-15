@@ -1,10 +1,10 @@
 class WhyUs extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <section class="container-fluid why-us">
         <div class="title-why-us fw-bold">
           <h1>Mengapa Anda harus menggunakan</h1>
@@ -56,8 +56,8 @@ class WhyUs extends HTMLElement {
             </div> 
           </div>
       </section> 
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('why-us', WhyUs);
+customElements.define("why-us", WhyUs);

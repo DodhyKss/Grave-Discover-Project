@@ -5,7 +5,8 @@
   font-family: "Inter", sans-serif;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
 }
@@ -25,12 +26,10 @@ main {
   padding: 8px;
   z-index: 100;
 }
- 
+
 .skip-to-content:focus {
-   top: 0;
+  top: 0;
 }
-
-
 
 /* // Navbar */
 .navbar {
@@ -61,8 +60,8 @@ main {
 
 .nav-item a {
   color: white;
-  font-size: 1.0em;
-  font-weight:bold;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .nav-link:hover {
@@ -92,7 +91,7 @@ main {
 }
 
 .collapse {
-  z-index:1;
+  z-index: 1;
 }
 
 .nav-link {
@@ -118,7 +117,7 @@ main {
   font-weight:bold;
   background-color: #f97b22;
   border-radius: 20px;
-  border-color:#f97b22;
+  border-color: #f97b22;
   padding: 7px 30px;
   margin-right: 5px;
   list-style: none;
@@ -127,7 +126,7 @@ main {
 
 .btn-daftar a:hover {
   background-color: white;
-  color:#f97b22;
+  color: #f97b22;
 }
 
 .btn-masuk a:hover {
@@ -135,25 +134,24 @@ main {
   color: white;
 }
 
-
-
 /* //Jumbohero */
 .remove-background {
   background-image: none !important;
 }
 
 .remove-content {
-  display:none;
+  display: none;
 }
 
 .hero {
   position: absolute;
   top: 308px;
   left: 0;
-  width: 100%;  
+  width: 100%;
 }
 
-.hero-title, p {
+.hero-title,
+p {
   max-width: 41.5rem;
 }
 
@@ -188,7 +186,7 @@ main {
 
 .btn-detail:hover {
   background-color: white;
-  color:#f97b22;
+  color: #f97b22;
 }
 /* //About Section */
 .about {
@@ -196,7 +194,7 @@ main {
   font-weight: 200;
   margin-top: 5%;
   margin-bottom: 10%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .row {
@@ -214,7 +212,7 @@ main {
   width: 350px;
   padding: 20px;
   border: none;
-  margin:5px;
+  margin: 5px;
 }
 
 .about_icons {
@@ -259,7 +257,6 @@ main {
   color: #f97b22;
 }
 
-
 .wu-box {
   background-color: #ffff;
   position: relative;
@@ -272,7 +269,7 @@ main {
 }
 
 .wu-box:hover {
-  color: #ffff !important; 
+  color: #ffff !important;
 }
 
 .wu-box:hover h5 {
@@ -301,8 +298,6 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
-  
 }
 
 .container-why-us {
@@ -330,20 +325,19 @@ main {
   max-height: 20px;
 }
 
-
-// FAQ Dropdown
+/* // FAQ Dropdown */
 .FAQ-container {
-margin-top:50px;
+  margin-top: 50px;
 }
 
 .FAQ {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:40px;
+  margin-top: 40px;
 }
-.dropdown-master{
-  width:60%;
+.dropdown-master {
+  width: 60%;
 }
 
 .accordion-button {
@@ -353,41 +347,39 @@ margin-top:50px;
   }
 }
 
-
-// Team Section
-
+/* // Team Section */
+/* 
 .icons-block {
   
-}
+} */
 
 .icons-block a {
   list-style: none;
   margin: 0 6px;
   font-size: 28.5px;
-  color:#3c3c3c;
-
+  color: #3c3c3c;
 }
 
 .social-media-icons {
-  min-width:44px;
-  min-height:44px;
-  margin-top:20px;
+  min-width: 44px;
+  min-height: 44px;
+  margin-top: 20px;
 }
 
 .social-media-icons {
-  border:none;
-  background-color:#ffff;
+  border: none;
+  background-color: #ffff;
 }
 
-.team-profiles-pic img{
-  width:190px;
-  height:200px;
-  -moz-transition: all .6s;
-  -webkit-transition: all .6s;
-  transition: all .6s;
+.team-profiles-pic img {
+  width: 190px;
+  height: 200px;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
   transform: translate3d(0px, 0px, 0px);
   object-fit: cover;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .team-profiles-pic img:hover {
@@ -400,19 +392,84 @@ margin-top:50px;
   background-color: #ffff;
   width: 245px !important;
   height: 320px;
-  border-radius:10px;
+  border-radius: 10px;
   margin: 13px;
 }
 
-//footer
+/* //footer */
 
 footer {
-  
-  bottom:0;
-  left:0;
-  width:100%;
-  height: 70px;
+  width: 100%;
+  height: auto;
   background: white;
+  padding: 50px;
 }
 
+/* Login */
 
+.container-login {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  background-color: #f6f5f5;
+}
+
+.login-form {
+  margin-top: 5rem;
+  background-color: #f6f5f5;
+  width: 430px;
+  padding: 20px 35px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #555;
+}
+
+.login-form h3 {
+  color: #1d2939;
+  font-weight: 500;
+}
+
+.login-input input[type="text"],
+.login-input input[type="password"] {
+  border-radius: 20px;
+  border: none;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 44px;
+  padding: 3px 10px;
+  margin-top: 10px;
+}
+
+.form-label {
+  font-size: 15px;
+}
+
+/* .form-control {
+  font-size: 4px;
+} */
+
+.login-form .btn-login {
+  height: 35px;
+  border-radius: 10px;
+  font-weight: 700;
+  min-width: 100px;
+  margin-top: 20px;
+  background-color: #f97b22;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-form .btn-login:hover {
+  background-color: #f97b22;
+}
+
+.login-form .link {
+  color: #f97b22;
+}
