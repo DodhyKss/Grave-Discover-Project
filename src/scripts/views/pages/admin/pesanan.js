@@ -72,19 +72,19 @@ const Pesanan = {
     const footerElement = document.querySelector("footer");
     footerElement.classList.add("remove-content");
 
-    // const btnTambah = document.getElementById("btnTambah");
-    // btnTambah.addEventListener("click", () => {
-    //   // eslint-disable-next-line import/extensions
-    //   import("./form-tambah-data")
-    //     .then((module) => {
-    //       const FormTambahData = module.default;
-    //       FormTambahData.loadForm();
-    //     })
-    //     .catch((error) => {
-    //       // eslint-disable-next-line no-console
-    //       console.error("Gagal memuat halaman formulir:", error);
-    //     });
-    // });
+    const btnTambah = document.getElementById("btnTambah");
+    btnTambah.addEventListener("click", () => {
+      // eslint-disable-next-line import/extensions
+      import("./form-tambah-data")
+        .then((module) => {
+          const FormTambahData = module.default;
+          FormTambahData.loadForm();
+        })
+        .catch((error) => {
+          // eslint-disable-next-line no-console
+          console.error("Gagal memuat halaman formulir:", error);
+        });
+    });
   },
 };
 

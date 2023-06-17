@@ -6,6 +6,8 @@ import "./components/why-us";
 import "./components/FAQ";
 import "./components/team-section";
 import "./components/sidebar-admin";
+import "./components/alert-success";
+import "./components/alert-warning";
 import "../styles/main.css";
 import "../styles/responsive.css";
 import "../styles/admin.css";

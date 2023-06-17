@@ -16,10 +16,12 @@ const routes = {
   "/register": RegisterPage,
   "/about": AboutPage,
   "/profile": Profile,
+  // admin
   "/dashboard": Dashboard,
   "/data-jenazah": DataJenazah,
   "/form-tambah-data": FormTambahData,
   "/pesanan": Pesanan,
+  // user
 };
 
 export default routes;

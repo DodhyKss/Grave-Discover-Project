@@ -26,7 +26,7 @@ body {
 }
 
 .vertical_wrap {
-  position: relative;
+  position: absolute;
   height: 100vh;
 }
 
@@ -34,7 +34,7 @@ body {
   width: 250px;
   height: 100vh;
   background: #1d2939;
-  position: fixed;
+  position: sticky;
   direction: inherit;
   z-index: 999;
 }
@@ -93,11 +93,6 @@ body {
   color: #1d2939;
 }
 
-.main_container {
-  width: calc(100%);
-  margin-left: 250px;
-}
-
 .top_bar {
   height: 60px;
   width: 100%;
@@ -105,11 +100,10 @@ body {
   padding: 15px 25px;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
   overflow: hidden; /* Menghilangkan overflow */
 }
 
@@ -133,16 +127,43 @@ body {
   color: #fff;
 }
 
-.main_container .container {
-  padding: 35px;
-  height: calc(100% - 60px);
-  overflow: auto;
+.main_container {
+  top: 0;
+  padding-top: 70px;
+  display: flex;
 }
 
-.main_container .container .item {
+.container-admin {
+  position: relative;
+  margin-right: 30px;
+  padding-bottom: 50px;
+  margin-left: 280px;
+}
+
+.content {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.container-dashboard {
+  position: relative;
+  margin-right: 30px;
+  padding-bottom: 50px;
+  margin-left: 100px;
+}
+
+.content-dashboard {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.main_container .container-admin .item {
   background: #dfdada;
   border-radius: 10px;
-  padding: 50px;
   margin-bottom: 25px;
 }
 
@@ -173,6 +194,7 @@ body {
   padding: 25px;
   height: calc(100% - 60px);
   overflow: auto;
+  display: flex;
 }
 
 .btn-submit {
@@ -186,12 +208,16 @@ body {
   background-color: #f97b22;
 }
 
-/* tabel data jenazah */
-
-.btn-add {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.btn-add button {
+  text-decoration: none;
 }
+
+.btn-add button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* tabel data jenazah */
 
 @media (max-width: 768px) {
   .top_bar .hamburger {
@@ -226,6 +252,17 @@ body {
     width: 100%;
     margin-left: 0;
   }
+
+  .container-admin {
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+
+  .container-dashboard {
+    margin-left: 0;
+  }
+
   .wrapper.active .vertical_wrap {
     visibility: visible;
     transition-delay: 0s;
@@ -234,5 +271,9 @@ body {
   .wrapper.active .vertical_bar {
     left: 0;
     transition-delay: 0s;
+  }
+
+  .container-form {
+    padding-left: 10px;
   }
 }

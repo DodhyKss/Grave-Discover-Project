@@ -49,7 +49,7 @@ class SidebarAdmin extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="">
                 <span class="icon">
                   <i class="fas fa-sign-out-alt" style="color: #f97b22"></i>
                 </span>

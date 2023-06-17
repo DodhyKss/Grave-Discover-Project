@@ -1,6 +1,5 @@
 import { registerTemplate } from "../templates/template-creator";
 
-
 const RegisterPage = {
   render() {
     return `
@@ -35,8 +34,6 @@ const RegisterPage = {
         </div>
       </div>
     `;
-  render() {
-    return ``;
   },
 
   afterRender() {

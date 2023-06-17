@@ -5,8 +5,8 @@ const Dashboard = {
   async render() {
     return `
     <sidebar-admin></sidebar-admin>
-    <div class="container-admin">
-      <div class="content">
+    <div class="container-dashboard">
+      <div class="content-dashboard">
         <div>
           <h3 class="title-bar fs-4 fw-bold d-flex justify-content-center">Pusat data Grave Discover</h3>
         </div>

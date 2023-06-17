@@ -1,10 +1,10 @@
 class About extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <section>
         <div class="about text-center">
           <h1>Tentang <span class="orangefont">Grave Discover</span></h1>
@@ -62,8 +62,8 @@ class About extends HTMLElement {
           </div>
         </div>
     </section>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('about-page', About);
+customElements.define("about-page", About);
