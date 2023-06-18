@@ -6,7 +6,7 @@ class About extends HTMLElement {
   render() {
     this.innerHTML = `
         <section>
-        <div class="about text-center" data-aos="zoom-in" data-aos-duration="2300">
+        <div id="about" class="about text-center" data-aos="zoom-in" data-aos-duration="2300">
           <h1>Tentang <span class="orangefont">Grave Discover</span></h1>
           <div class="descripsi-tentang d-flex justify-content-center">
             <p>

@@ -65,7 +65,7 @@ const DataJenazah = {
     const btnTambah = document.getElementById("btnTambah");
     btnTambah.addEventListener("click", () => {
       // eslint-disable-next-line import/extensions
-      import("./form-tambah-data")
+      import("./pesanan-perawatan")
         .then((module) => {
           const FormTambahData = module.default;
           FormTambahData.loadForm();

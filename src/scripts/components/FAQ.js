@@ -1,11 +1,11 @@
 class FAQ extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
-        <section class="FAQ-container">
+  render() {
+    this.innerHTML = `
+        <section id="FAQ" class="FAQ-container">
         <div>
         <h1 class=" text-white text-center">Yang Sering <span class="orangefont">Ditanyakan</span></h1>
        </div>
@@ -80,8 +80,8 @@ class FAQ extends HTMLElement {
         </div>
        </div> 
       </section>
-        `
-    }
+        `;
+  }
 }
 
 customElements.define('faq-page', FAQ);

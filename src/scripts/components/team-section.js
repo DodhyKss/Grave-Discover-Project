@@ -16,9 +16,9 @@ class TeamSection extends HTMLElement {
               <h4><strong>Zein Hasyim</strong></h4>
               <h5>Frontend Developer</h5>
               <div class="icons-block d-flex justify-content-center" >
-                <a href=""><i class="fab fa-github" alt="Github-icon"></i></a>
-                <a href=""><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
-                <a href=""><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
+                <a href="https://github.com/ZeinHasyim" target="_blank"><i class="fab fa-github" alt="Github-icon"></i></a>
+                <a href="https://www.instagram.com/zeinhasyim/" target="_blank"><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
+                <a href="https://www.linkedin.com/in/zein-hasyim-aljufri-24698b216/" target="_blank"><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
               </div>
             </div>
             <div class="card-profile col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
@@ -28,9 +28,9 @@ class TeamSection extends HTMLElement {
               <h4><strong>Dodhy Kurniawan</strong></h4>
               <h5>Frontend Developer</h5>
               <div class="icons-block d-flex justify-content-center">
-                <a href=""><i class="fab fa-github" alt="Github-icon"></i></a>
-                <a href=""><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
-                <a href=""><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
+                <a href="" target="_blank"><i class="fab fa-github" alt="Github-icon"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
+                <a href="" target="_blank"><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
               </div>
             </div>
             <div class="card-profile col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
@@ -52,9 +52,9 @@ class TeamSection extends HTMLElement {
               <h4><strong>Novan Rizki</strong></h4>
               <h5>Frontend Developer</h5>
               <div class="icons-block d-flex justify-content-center">
-                <a href=""><i class="fab fa-github" alt="Github-icon"></i></a>
-                <a href=""><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
-                <a href=""><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
+                <a href="" target="_blank"><i class="fab fa-github" alt="Github-icon"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
+                <a href="" target="_blank"><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
               </div>
             </div>
           </div>

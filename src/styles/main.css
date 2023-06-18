@@ -143,6 +143,10 @@ main {
   display: none;
 }
 
+.show-content {
+  display:block;
+}
+
 .hero {
   position: absolute;
   top: 308px;
@@ -255,6 +259,10 @@ p {
 
 .orangefont {
   color: #f97b22;
+}
+
+.orangeBG{
+  background-color: #f97b22;
 }
 
 .wu-box {
@@ -465,9 +473,7 @@ footer {
   font-size: 15px;
 }
 
-/* .form-control {
-  font-size: 4px;
-} */
+
 
 .register-form .btn-register,
 .login-form .btn-login {
@@ -496,4 +502,26 @@ footer {
   background-color: #f97b22;
   border-radius:10px;
   margin-left: 10px;
+}
+
+.formpesanan{
+  background-color: #f97b22;
+  border-radius: 30px;
+  padding:50px;
+}
+
+.table {
+  background-color:white;
+  border-radius:30px;
+}
+
+
+.button-container {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px;
 }

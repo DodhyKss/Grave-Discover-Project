@@ -37,6 +37,11 @@ module.exports = {
           filename: "images/[name][ext]",
         },
       },
+      {
+        test: /\.json$/,
+        loader: "json-loader",
+        type: "javascript/auto", // Untuk webpack versi 4 ke atas
+      },
     ],
   },
   plugins: [
