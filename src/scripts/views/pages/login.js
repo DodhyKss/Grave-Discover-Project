@@ -1,5 +1,3 @@
-import { loginTemplate } from "../templates/template-creator";
-
 const LoginPage = {
   async render() {
     return `
@@ -41,14 +39,8 @@ const LoginPage = {
     headerBg.style.height = "120px";
     headerBg.style.backgroundColor = "#1d2939";
 
-    const heroText = document.getElementById("hero");
-    heroText.remove();
-
-    const main = document.getElementById("maincontent");
     const section = document.createElement("section");
     section.setAttribute("tabindex", "0");
-    section.innerHTML = loginTemplate();
-    main.appendChild(section);
 
     const handleSubmit = (event) => {
       event.preventDefault();

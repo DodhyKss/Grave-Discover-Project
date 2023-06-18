@@ -11,7 +11,10 @@ class WhyUs extends HTMLElement {
           <h2><span class="orangefont">Grave Discover</span>?</h2>
         </div>
         <div class="row ">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-once="true">
+          <div class="col-lg-6" data-aos="fade-down"
+               data-aos-easing="linear"
+               data-aos-duration="1500"
+                data-aos-once="true">
               <img
                 src="./icons/icon-faq.png" class="img-fluid mx-auto d-block "
                 alt="img faq"
@@ -22,14 +25,18 @@ class WhyUs extends HTMLElement {
             <!-- card why us -->  
             <div class="col-lg-6">
               <div class="row">
-              <div class="col-lg-6 col-md-6">
-                <div class="wu-box mb-3 ">
+              <div class="col-lg-6 col-md-6" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000" data-aos-once="true">
+                <div class="wu-box mb-3">
                 <i class="fa-solid fa-star col  mb-2"></i>
                 <h5 class="orangefont  ">Mudah Digunakan</h5>
                 <p class="why-us-text">Tampilan desain website dengan memperhatikan kemudahan anda dalam menggunakan aplikasi Grave Discover.</p>
                 </div>  
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-lg-6 col-md-6" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2100" data-aos-once="true">
                 <div class="wu-box">
                   <i class="fa-regular fa-clock"></i>
                 <h5 class="orangefont ">Efisien</h5>
@@ -38,14 +45,18 @@ class WhyUs extends HTMLElement {
               </div>
             </div>
             <div class="row mt-3">
-              <div class="col-lg-6 col-md-6">
+              <div class="col-lg-6 col-md-6" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2200" data-aos-once="true">
                 <div class="wu-box mb-3">
                 <img class="why_icons col mb-2" src="./icons/Globe2.png" />
                 <h5 class="orangefont ">Akses Dimana Saja, Kapan Saja</h5>
                 <p class="why-us-text">Akses aplikasi secara online, memungkinkan Anda memesan perawatan makam dan menemukan lokasi makam kapan pun dan di mana pun Anda berada.</p>
                  </div> 
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-lg-6 col-md-6" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2300" data-aos-once="true">
                 <div class="wu-box ">
                 <img class="why_icons col mb-2" src="./icons/Vector (1).png" />
                 <h5 class="orangefont ">Temukan Dengan Mudah</h5>

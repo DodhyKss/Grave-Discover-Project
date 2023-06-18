@@ -1,4 +1,4 @@
-import CONFIG from '../../globals/config';
+import CONFIG from "../../globals/config";
 
 const landingPageTemplate = () => `
     <h3>Landing Page</h3>
@@ -16,6 +16,9 @@ const registerTemplate = () => `
 
 const profile = () => `
     <h3>Profile Page</h3>
+`;
+
+const formTambahData = () => `
 `;
 
 export {

@@ -1,12 +1,13 @@
-/* eslint-disable quotes */
+/* eslint-disable no-undef */
 const FormTambahData = {
   async render() {
     return `
       <sidebar-admin></sidebar-admin>
       <div class="container-admin">
-        <div>
-          <h3 class="fs-4 fw-bold d-flex justify-content-center mx-2">Tambah Data Jenazah</h3>
-        </div>
+      <div>
+        <h3 class="fs-4 fw-bold d-flex justify-content-center mx-2">Tambah Data Jenazah</h3>
+      </div>
+      <form class="input-data" id="formTambahData">
         <div class="mb-3">
           <label for="namaLengkap" class="form-label">Nama Lengkap</label>
           <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan nama lengkap">
@@ -53,9 +54,10 @@ const FormTambahData = {
           <input type="text" class="form-control" id="nomorMakam" placeholder="Masukkan Nomor Makam">
         </div>
         <div class="btn-submit">
-          <button class="btn" style="background: #f97b22; color: white;" id="simpanButton">Simpan</button>
+          <button type="submit" class="btn" style="background: #f97b22; color: white;" id="simpanButton">Simpan</button>
         </div>
-      </div>
+      </form>
+    </div>
     `;
   },
 
@@ -66,27 +68,33 @@ const FormTambahData = {
     const footerElement = document.querySelector("footer");
     footerElement.classList.add("remove-content");
 
-    const simpanButton = document.getElementById("simpanButton");
-    simpanButton.addEventListener("click", this.simpanData);
+    const formTambahData = document.getElementById("formTambahData");
+    formTambahData.addEventListener("submit", this.handleSubmit);
   },
 
-  async simpanData() {
-    // Ambil nilai input
-    const namaLengkap = document.getElementById("namaLengkap").value;
-    const jenisKelamin = document.querySelector(
+  handleSubmit(event) {
+    event.preventDefault();
+
+    const namaLengkapInput = document.getElementById("namaLengkap");
+    const jenisKelaminInput = document.querySelector(
       'input[name="jenisKelamin"]:checked'
-    ).value;
-    const tanggalLahir = document.getElementById("tanggalLahir").value;
-    const tanggalMeninggal = document.getElementById("tanggalMeninggal").value;
-    const agama = document.getElementById("agama").value;
-    const namaAyah = document.getElementById("namaAyah").value;
-    const alamat = document.getElementById("alamat").value;
-    const nomorMakam = document.getElementById("nomorMakam").value;
+    );
+    const tanggalLahirInput = document.getElementById("tanggalLahir");
+    const tanggalMeninggalInput = document.getElementById("tanggalMeninggal");
+    const agamaInput = document.getElementById("agama");
+    const namaAyahInput = document.getElementById("namaAyah");
+    const alamatInput = document.getElementById("alamat");
+    const nomorMakamInput = document.getElementById("nomorMakam");
 
-    // Lakukan proses penyimpanan data
-    // ...
+    const namaLengkap = namaLengkapInput.value;
+    const jenisKelamin = jenisKelaminInput.value;
+    const tanggalLahir = tanggalLahirInput.value;
+    const tanggalMeninggal = tanggalMeninggalInput.value;
+    const agama = agamaInput.value;
+    const namaAyah = namaAyahInput.value;
+    const alamat = alamatInput.value;
+    const nomorMakam = nomorMakamInput.value;
 
-    // Contoh: Tampilkan data yang diinputkan
     console.log("Nama Lengkap:", namaLengkap);
     console.log("Jenis Kelamin:", jenisKelamin);
     console.log("Tanggal Lahir:", tanggalLahir);
@@ -95,6 +103,8 @@ const FormTambahData = {
     console.log("Nama Ayah:", namaAyah);
     console.log("Alamat:", alamat);
     console.log("Nomor Makam:", nomorMakam);
+
+    formTambahData.reset();
   },
 };
 

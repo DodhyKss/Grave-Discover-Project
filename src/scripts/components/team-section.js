@@ -1,14 +1,14 @@
 class TeamSection extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <section class="team-section">
         <h1 class="text-white text-center mb-5 mt-5">Tim <span class="orangefont">Grave Discover</span></h1>
         <div class="container text-center">
-          <div class="row row-cols-4 justify-content-center">
+          <div class="row row-cols-4 justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <div class="card-profile col">
               <div class="team-profiles-pic">
               <img src="./img/ProfilePicZein.jpg" alt="Team Picture">
@@ -21,7 +21,7 @@ class TeamSection extends HTMLElement {
                 <a href=""><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
               </div>
             </div>
-            <div class="card-profile col">
+            <div class="card-profile col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <div class="team-profiles-pic">
                 <img src="./img/blankpic.png" alt="Team Picture">
                 </div>
@@ -33,7 +33,7 @@ class TeamSection extends HTMLElement {
                 <a href=""><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
               </div>
             </div>
-            <div class="card-profile col">
+            <div class="card-profile col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <div class="team-profiles-pic">
               <img src="./img/ProfilePicFebri.jpg" alt="Team Picture">
               </div>
@@ -45,7 +45,7 @@ class TeamSection extends HTMLElement {
                 <a href=""><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
               </div>
             </div>
-            <div class="card-profile col">
+            <div class="card-profile col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <div class="team-profiles-pic">
               <img src="./img/ProfilePicNovan.jpg" alt="Team Picture">
               </div>
@@ -60,8 +60,8 @@ class TeamSection extends HTMLElement {
           </div>
         </div>
       </section>
-        `
-    }
+        `;
+  }
 }
 
 customElements.define('team-section', TeamSection);
