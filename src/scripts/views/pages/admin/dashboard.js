@@ -5,18 +5,18 @@ const Dashboard = {
   async render() {
     return `
     <sidebar-admin></sidebar-admin>
-
-    <div class="content">
-      <div>
-        <h3 class="title-bar fs-4 fw-bold d-flex justify-content-center">Pusat data Grave Discover</h3>
-      </div>
-      <div class="container-admin px-5">
-        <div class="row g-2 my-2 gap-5 justify-content-center">
-          <div class="col-md-4">
-            <div class="card-dashboard p-3 shadow-sm d-flex justify-content-around align-items-center">
-              <div>
-                <h3 class="fs-5 text-white">Total Jenazah</h3>
-                <p class="total fs-2 fw-bold">0</p>
+    <div class="container-dashboard">
+      <div class="content-dashboard">
+        <div>
+          <h3 class="title-bar fs-4 fw-bold d-flex justify-content-center">Pusat data Grave Discover</h3>
+        </div>
+        <div class="container-admin px-5">
+          <div class="row g-2 my-2 gap-5 justify-content-center">
+            <div class="col-md-4">
+              <div class="card-dashboard p-3 shadow-sm d-flex justify-content-around align-items-center">
+                <div>
+                  <h3 class="fs-5 text-white">Total Jenazah</h3>
+                    <p class="total fs-2 fw-bold">0</p>
               </div>
               <img src="${iconData}" height="60px" alt="">
               <i class="fas rounded-full p-2"></i>

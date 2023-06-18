@@ -9,7 +9,7 @@ const DataJenazah = {
         </div>
 
         <div class="btn-add">
-        <button id="btnTambah" style="background: #f97b22; color: white;">
+        <button id="btnTambah" class="btn" style="background: #f97b22; color: white;">
           <a href="#/form-tambah-data">+ Tambah</a>
         </button>
       </div>
@@ -42,37 +42,11 @@ const DataJenazah = {
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>
-                <a href="#"><i class="fas fa-edit"></i></a>
-                <a href="#"><i class="fas fa-trash"></i></a>
-              </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash"></i></a>
+                  <a href=""><i class="fas fa-edit"></i></a>
+                  <a href="#" class="delete-button"><i class="fas fa-trash"></i></a>
                 </td>
               </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <td colspan="2">Larry the Bird</td>
-                <td>
-                  <a href="#"><i class="fas fa-edit"></i></a>
-                  <a href="#"><i class="fas fa-trash"></i></a>
-                </td>
-              </tr>
+              <!-- Tambahkan data jenazah lainnya di sini -->
             </tbody>
           </table>
         </table>
@@ -97,10 +71,69 @@ const DataJenazah = {
           FormTambahData.loadForm();
         })
         .catch((error) => {
-          // eslint-disable-next-line no-console
           console.error("Gagal memuat halaman formulir:", error);
         });
     });
+
+    const deleteButtons = document.querySelectorAll(".delete-button");
+    deleteButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        this.showAlert();
+      });
+    });
+
+    // Panggil fungsi untuk mengisi tabel dengan data jenazah
+    this.populateTable();
+  },
+
+  async populateTable() {
+    const tableBody = document.querySelector("tbody");
+
+    try {
+      // Panggil fungsi untuk mendapatkan data jenazah dari API
+      // eslint-disable-next-line no-undef
+      const jenazahData = await getDataJenazah();
+
+      // Hapus semua baris tabel sebelum mengisi data baru
+      tableBody.innerHTML = "";
+
+      // Loop melalui data jenazah dan tambahkan setiap baris ke tabel
+      jenazahData.forEach((jenazah, index) => {
+        const row = document.createElement("tr");
+
+        // Buat kolom untuk setiap properti jenazah
+        const columns = [
+          index + 1,
+          jenazah.namaLengkap,
+          jenazah.jenisKelamin,
+          jenazah.tanggalLahir,
+          jenazah.tanggalMeninggal,
+          jenazah.agama,
+          jenazah.namaAyah,
+          jenazah.alamat,
+          jenazah.nomorMakam,
+          `<a href=""><i class="fas fa-edit"></i></a>
+           <a href="" class="delete-button"><i class="fas fa-trash"></i></a>`,
+        ];
+
+        // Tambahkan setiap kolom ke dalam baris
+        columns.forEach((column) => {
+          const cell = document.createElement("td");
+          cell.innerHTML = column;
+          row.appendChild(cell);
+        });
+
+        // Tambahkan baris ke dalam tbody tabel
+        tableBody.appendChild(row);
+      });
+    } catch (error) {
+      console.error("Gagal mendapatkan data jenazah:", error);
+    }
+  },
+
+  showAlert() {
+    const alertContainer = document.getElementById("alert-container");
+    alertContainer.innerHTML = "<alert-warning></alert-warning>";
   },
 };
 

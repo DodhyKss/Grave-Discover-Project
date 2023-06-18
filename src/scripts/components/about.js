@@ -66,4 +66,4 @@ class About extends HTMLElement {
   }
 }
 
-customElements.define('about-page', About);
+customElements.define("about-page", About);
