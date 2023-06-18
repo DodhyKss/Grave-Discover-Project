@@ -16,7 +16,7 @@ main {
   margin: 32px auto;
 }
 
-//skip-to-content-button
+/* //skip-to-content-button */
 .skip-to-content {
   position: absolute;
   top: -40px;
@@ -486,5 +486,5 @@ footer {
 }
 
 .login-form .link {
-  color: #f97b22;
+  color: #f97b22;
 }

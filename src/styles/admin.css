@@ -13,7 +13,7 @@ body {
   background-color: #fff;
 }
 
-.wrapper {
+/* .wrapper {
   margin: 0;
 }
 
@@ -91,9 +91,9 @@ body {
 .vertical_bar .menu li a.active {
   background: #fff;
   color: #1d2939;
-}
+} */
 
-.top_bar {
+/* .top_bar {
   height: 60px;
   width: 100%;
   background: #1d2939;
@@ -104,7 +104,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  overflow: hidden; /* Menghilangkan overflow */
+  overflow: hidden; 
 }
 
 .top_bar .hamburger {
@@ -145,9 +145,9 @@ body {
   width: 100%;
   padding: 10px;
   margin-top: 60px;
-}
+} */
 
-.container-dashboard {
+/* .container-dashboard {
   position: relative;
   margin-right: 30px;
   padding-bottom: 50px;
@@ -187,6 +187,236 @@ body {
 .contact {
   padding: 5px;
   border-radius: 8px;
+} */
+
+/* input,
+button {
+  font-size: 12px;
+}
+
+.head_bar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #94af9f;
+  color: white;
+} */
+/* 
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+} */
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.input_section > form > button {
+  background-color: #94af9f;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: #94af9f;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #94af9f;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.search_section > h2 {
+  color: #94af9f;
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+}
+
+.search_section > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.search_section > form > button {
+  background-color: #94af9f;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pesanan-perawatan {
+  margin: 16px 0 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.pesanan-perawatan > h2 {
+  color: #94af9f;
+}
+
+.pesanan-perawatan > .pesanan-list {
+  padding: 16px;
+}
+
+.pesanan-perawatan > .pesanan-list > .pesanan-item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.pesanan-perawatan > .pesanan-list > .pesanan-item > h3,
+p {
+  margin: 8px 0;
+}
+
+.pesanan-perawatan > .pesanan-list > .pesanan-item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pesanan-perawatan > .pesanan-list > .pesanan-item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+}
+
+.pesanan-perawatan > .pesanan-list > .pesanan-item > .action > .red {
+  background-color: darkred;
+  color: white;
+}
+
+/* --------------------------- */
+
+.check-button {
+  background-color: #fffb00;
+  color: black;
+  background-size: contain;
+  width: 100px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background-color: #a09d00;
+  color: black;
+  background-size: contain;
+}
+
+.trash-button {
+  background-color: #d42d2d;
+  color: white;
+  background-size: contain;
+  width: 60px;
+  height: 40px;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background-color: #7a0b0b;
+  color: white;
+  background-size: contain;
+}
+
+.undo-button {
+  background-color: #00aa44;
+  color: white;
+  background-size: contain;
+  width: 60px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background-color: #0e6330;
+  color: white;
+  background-size: contain;
+}
+
+.edit-button {
+  background-color: #2336db;
+  color: white;
+  background-size: contain;
+  width: 60px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.edit-button:hover {
+  background-color: #141f7c;
+  color: white;
+  background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
 }
 
 /* Form */
