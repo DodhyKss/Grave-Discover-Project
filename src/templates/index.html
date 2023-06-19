@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#808080"/>
-  <link rel="manifest" href="./app.webmanifest">
-  <link rel="shortcut icon" href="./icons/icon-food.png" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/6fc21245d1.js" crossorigin="anonymous"></script>
-  <title>Grave Discover</title>
-</head>
-<body>
-  <a tabindex="1" href="#maincontent" class="skip-to-content" id="skip-button">Skip</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#808080" />
+    <link rel="manifest" href="./app.webmanifest" />
+    <link
+      rel="shortcut icon"
+      href="./icons/icon-food.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/6fc21245d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Grave Discover</title>
+  </head>
+  <body>
+    <a tabindex="1" href="#maincontent" class="skip-to-content" id="skip-button"
+      >Skip</a
+    >
 
     <!-- header -->
-    <header style="background-image: url('./img/JumboTron.png'); height: 800px; background-repeat: no-repeat; background-size: cover;">
+    <header
+      style="
+        background-image: url('./img/JumboTron.png');
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
       <!-- drawer -->
 
       <!-- navigation -->
@@ -46,20 +62,20 @@
               </li>
               <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
               <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href=".team-section">Tim Kami</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="#teamSection">Tim Kami</a></li>
             </ul>
             <div class="d-flex">
-              <button class="btn-masuk btn"><a href="#/pesanan-perawatan">Pesan</a></button>
+              <button class="btn-masuk btn">
+                <a href="#/pesanan-perawatan">Pesan</a>
+              </button>
               <button class="btn-daftar btn">
-                <a href="#/register">Data Makam</a>
+                <a href="#/data-makam">Data Makam</a>
               </button>
             </div>
           </div>
         </div>
       </nav>
-          
+
       <!-- Hero -->
     </header>
     <!-- main -->
@@ -68,54 +84,85 @@
     </main>
     <!-- footer -->
     <footer>
-      <h3 class="text-center">Copyright © 2023 - Grave Discover</h3>
+      <h3 class="text-center">
+        Copyright © 2023 - Grave Discover || Capstone Team C23-R4106
+      </h3>
     </footer>
-    
-<div class="formpesanan remove-content container-md">                                                 
-  <section class="input_section">
-      <h2 class="text-center ">Masukkan Pesanan Perawatan Baru</h2>
+    <div class="formpesanan remove-content container-md">
+      <section class="input_section">
+        <h2 class="text-center">Masukkan Pesanan Perawatan Baru</h2>
         <form id="submit-pesanan">
-          <div class="mb-3">
-            <label for="tanggalPemesanan" class="form-label">Tanggal Pemesanan</label>
-            <input type="date" class="form-control " id="tanggalPemesanan" placeholder="Masukkan Tanggal Pemesanan">
+          <div class="form-inputan mb-3">
+            <label for="tanggalPemesanan" class="form-label"
+              >Tanggal Pemesanan</label
+            >
+            <input
+              type="date"
+              class="form-control"
+              id="tanggalPemesanan"
+              placeholder="Masukkan Tanggal Pemesanan"
+            />
           </div>
-          <div class="mb-3">
-          <label for="nomorMakam" class="form-label">Nomor Makam</label>
-          <input type="text" class="form-control " id="nomorMakam" placeholder="Masukkan Nomor Makam">
-        </div>
-          <div class="mb-3">
-            <label for="namaPadaMakam" class="form-label">Nama Pada Makam</label>
-            <input type="text" class="form-control " id="namaPadaMakam" placeholder="Masukkan Nama Pada Makam">
+          <div class="form-inputan mb-3">
+            <label for="nomorMakam" class="form-label">Nomor Makam</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nomorMakam"
+              placeholder="Masukkan Nomor Makam"
+            />
           </div>
-          <div class="mb-3">
+          <div class="form-inputan mb-3">
+            <label for="namaPadaMakam" class="form-label"
+              >Nama Pada Makam</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="namaPadaMakam"
+              placeholder="Masukkan Nama Pada Makam"
+            />
+          </div>
+          <div class="form-inputan mb-3">
             <label for="keterangan" class="form-label">Keterangan</label>
-            <input type="text" class="form-control " id="keterangan" placeholder="Tambahkan Keterangan">
+            <input
+              type="text"
+              class="form-control"
+              id="keterangan"
+              placeholder="Tambahkan Keterangan"
+            />
           </div>
-      <div class="input_inline">
-        <label for="inputPesananIsComplete">Selesai Dilakukan Perawatan</label>
-        <input id="inputPesananIsComplete" type="checkbox" />
-      </div>
-      <button type="submit" id="submitMakam" value="Submit Pesanan" class="btn btn-warning ml-5">
-        Masukkan Pesanan ke Daftar
-      </button>
-    </form>
-  </section>
+          <div class="input_inline">
+            <label for="inputPesananIsComplete"
+              >Selesai Dilakukan Perawatan</label
+            >
+            <input id="inputPesananIsComplete" type="checkbox" />
+          </div>
+          <button
+            type="submit"
+            id="submitMakam"
+            value="Submit Pesanan"
+            class="btn btn-warning ml-5"
+          >
+            Masukkan Pesanan ke Daftar Belum Selesai
+          </button>
+        </form>
+      </section>
 
-  <section class="pesanan-perawatan">
-    <h2 class="text-center mt-5">Belum Selesai Dilakukan Perawatan</h2>
-    <div id="incompletePesananList" class="pesanan-list">
-      
-    </div>
-  </section>
-  
-  <section class="pesanan-perawatan">
-    <h2 class="text-center mt-5">Selesai Dilakukan Perawatan</h2>
+      <section class="pesanan-perawatan">
+        <h2 class="text-center mt-5 fs-3 mb-4">
+          Belum Selesai Dilakukan Perawatan
+        </h2>
+        <div id="incompletePesananList" class="pesanan-list"></div>
+      </section>
 
-    <div id="completePesananList" class="pesanan-list">
+      <section class="pesanan-perawatan">
+        <h2 class="text-center mt-5 fs-3 mb-4">Selesai Dilakukan Perawatan</h2>
+
+        <div id="completePesananList" class="pesanan-list"></div>
+      </section>
     </div>
-  </section>
-</div>  
-<!-- <section class="search_section">
+    <!-- <section class="search_section">
   <h2>Cari Makam</h2>
   <form id="searchMakam">
     <label for="searchMakamName">Judul</label>
@@ -123,6 +170,5 @@
     <button id="searchSubmit" type="submit">Cari</button>
   </form>
 </section> -->
-
   </body>
 </html>

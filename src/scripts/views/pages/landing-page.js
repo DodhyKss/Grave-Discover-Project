@@ -1,4 +1,4 @@
-import { landingPageTemplate } from '../templates/template-creator';
+import { landingPageTemplate } from "../templates/template-creator";
 
 const LandingPage = {
   async render() {
@@ -29,13 +29,13 @@ const LandingPage = {
   },
 
   async afterRender() {
-    const main = document.getElementById('maincontent');
-    const headerBg = document.querySelector('header');
-    headerBg.classList.remove('remove-background');
+    const main = document.getElementById("maincontent");
+    const headerBg = document.querySelector("header");
+    headerBg.classList.remove("remove-background");
     headerBg.style.height = "800px";
 
-    const table = document.querySelector('');
-    table.classList.add('remove-content');
+    const formElement = document.querySelector(".formpesanan");
+    formElement.classList.add("remove-content");
   },
 };
 

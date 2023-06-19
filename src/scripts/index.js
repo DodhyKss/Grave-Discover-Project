@@ -12,16 +12,14 @@ import "./components/about";
 import "./components/why-us";
 import "./components/FAQ";
 import "./components/team-section";
-import "./components/sidebar-admin";
-import "./components/sidebar-user";
 import "../styles/main.css";
 import "../styles/responsive.css";
 import "../styles/admin.css";
 import "../styles/style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import App from "./views/app";
 
 const hamburgerButtonElement = document.querySelector("#hamburger");

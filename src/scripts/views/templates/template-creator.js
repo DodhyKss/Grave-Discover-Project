@@ -4,13 +4,11 @@ const landingPageTemplate = () => `
     <h3>Landing Page</h3>
 `;
 
-const aboutTemplate = () => `
+const pesananPerawatanTemplate = () => `
     <h3>About Page</h3>
 `;
-const loginTemplate = () => `
-    <h3>Login Page</h3>
-`;
-const registerTemplate = () => `
+
+const dataMakamTemplate = () => `
 <h3>Register Page</h3>
 `;
 
@@ -22,9 +20,8 @@ const formTambahData = () => `
 `;
 
 export {
-  loginTemplate,
-  registerTemplate,
+  dataMakamTemplate,
   landingPageTemplate,
-  aboutTemplate,
+  pesananPerawatanTemplate,
   profile,
 };

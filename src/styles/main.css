@@ -16,7 +16,7 @@ main {
   margin: 32px auto;
 }
 
-//skip-to-content-button
+/* //skip-to-content-button */
 .skip-to-content {
   position: absolute;
   top: -40px;
@@ -73,8 +73,6 @@ main {
   border: none;
 }
 
-
-
 .app-bar button:hover {
   background-color: white;
   color: #f97b22;
@@ -98,23 +96,21 @@ main {
   color: black;
 }
 
-
-
-.btn-masuk a{
-  color:white;
-  font-weight:bold;
+.btn-masuk a {
+  color: white;
+  font-weight: bold;
   background-color: transparent;
   border-radius: 20px;
   border: 1.5px solid white;
   padding: 7px 30px;
   margin-right: 5px;
   list-style: none;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.btn-daftar a{
-  color:white;
-  font-weight:bold;
+.btn-daftar a {
+  color: white;
+  font-weight: bold;
   background-color: #f97b22;
   border-radius: 20px;
   border-color: #f97b22;
@@ -130,7 +126,7 @@ main {
 }
 
 .btn-masuk a:hover {
-  background-color:#f97b22;
+  background-color: #f97b22;
   color: white;
 }
 
@@ -144,7 +140,7 @@ main {
 }
 
 .show-content {
-  display:block;
+  display: block;
 }
 
 .hero {
@@ -165,7 +161,7 @@ p {
 
 .img-jumbotron img {
   width: 100%;
-  -webkit-filter: brightness(40%);
+  -webkit-filter: brightness(70%) !important;
   margin-top: -100px;
   z-index: 1;
 }
@@ -184,13 +180,14 @@ p {
 .btn-detail {
   background-color: #f97b22 !important;
   border-radius: 20px !important;
-  border-color:#f97b22 !important;
+  border-color: #f97b22 !important;
   padding: 7px 30px !important;
 }
 
 .btn-detail:hover {
-  background-color: white;
-  color: #f97b22;
+  background-color: white !important;
+  color: #f97b22 !important;
+  border: none;
 }
 /* //About Section */
 .about {
@@ -261,7 +258,7 @@ p {
   color: #f97b22;
 }
 
-.orangeBG{
+.orangeBG {
   background-color: #f97b22;
 }
 
@@ -335,7 +332,7 @@ p {
 
 /* // FAQ Dropdown */
 .FAQ-container {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .FAQ {
@@ -349,9 +346,9 @@ p {
 }
 
 .accordion-button {
-  background-color:#f97b22 !important;
+  background-color: #f97b22 !important;
   &:not(.collapsed) {
-    background-color:#eb690c !important;
+    background-color: #eb690c !important;
   }
 }
 
@@ -360,6 +357,15 @@ p {
 .icons-block {
   
 } */
+
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-section h1 {
+  padding-bottom: 55px;
+}
 
 .icons-block a {
   list-style: none;
@@ -407,114 +413,56 @@ p {
 /* //footer */
 
 footer {
-  position:absolute;
-  width:100%;
-  height:60px;   /* Height of the footer */
-  background:white;
-}
-
-/* Login */
-.container-register,
-.container-login {
+  position: relative;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  background: #f6f5f5;
   display: flex;
-  height: 100%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.card-body {
-  background-color: #f6f5f5;
-}
-
-.register-form,
-.login-form {
-  margin-top: 5rem;
-  background-color: #f6f5f5;
-  width: 430px;
-  padding: 20px 35px;
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #555;
-  padding-bottom: 40px;
-}
-
-.register-form h3,
-.login-form h3 {
-  color: #1d2939;
-  font-weight: 500;
-}
-
-.register-input input[type="text"],
-.register-input input[type="password"],
-.register-input input[type="number"] {
-  border-radius: 20px;
-  border: none;
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  min-height: 44px;
-  padding: 3px 10px;
-  margin-top: 10px;
-}
-
-.login-input input[type="text"],
-.login-input input[type="password"] {
-  border-radius: 20px;
-  border: none;
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  min-height: 44px;
-  padding: 3px 10px;
-  margin-top: 10px;
-}
-
-.form-label {
-  font-size: 15px;
-}
-
-
-
-.register-form .btn-register,
-.login-form .btn-login {
-  height: 35px;
-  border-radius: 10px;
-  font-weight: 700;
-  min-width: 100px;
-  margin-top: 20px;
-  background-color: #f97b22;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.register-form .btn-register,
-.login-form .btn-login:hover {
-  background-color: #f97b22;
-}
-
-.login-form .link {
-  color: #f97b22;
+footer h3 {
+  font-size: 13px;
 }
 
 #search-addon {
   background-color: #f97b22;
-  border-radius:10px;
+  border-radius: 10px;
   margin-left: 10px;
 }
 
-.formpesanan{
+#search-addon {
   background-color: #f97b22;
-  border-radius: 30px;
-  padding:50px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.formpesanan {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-inputan label {
+  font-weight: 500;
+  padding-bottom: 7px;
+}
+
+.form-inputan input {
+  border-style: outset;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px rgba(62, 62, 62, 0.2);
+  background-color: #fff;
 }
 
 .table {
-  background-color:white;
-  border-radius:30px;
+  background-color: white;
+  border-radius: 30px;
 }
-
 
 .button-container {
   border: none;
