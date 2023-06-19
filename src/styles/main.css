@@ -139,6 +139,10 @@ main {
   display: none;
 }
 
+.show-content {
+  display: block;
+}
+
 .hero {
   position: absolute;
   top: 308px;
@@ -252,6 +256,10 @@ p {
 
 .orangefont {
   color: #f97b22;
+}
+
+.orangeBG {
+  background-color: #f97b22;
 }
 
 .wu-box {
@@ -418,101 +426,50 @@ footer h3 {
   font-size: 13px;
 }
 
-/* Login */
-.container-register,
-.container-login {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+#search-addon {
+  background-color: #f97b22;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-.card-body {
-  background-color: #f6f5f5;
+#search-addon {
+  background-color: #f97b22;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-.register-form,
-.login-form {
-  margin-top: 5rem;
-  background-color: #f6f5f5;
-  width: 430px;
-  padding: 20px 35px;
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #555;
-  padding-bottom: 40px;
+.formpesanan {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.register-form h3,
-.login-form h3 {
-  color: #1d2939;
+.form-inputan label {
   font-weight: 500;
+  padding-bottom: 7px;
 }
 
-.register-input input[type="text"],
-.register-input input[type="password"],
-.register-input input[type="number"] {
+.form-inputan input {
+  border-style: outset;
   border-radius: 20px;
-  border: none;
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  min-height: 44px;
-  padding: 3px 10px;
-  margin-top: 10px;
+  box-shadow: 0px 0px 4px rgba(62, 62, 62, 0.2);
+  background-color: #fff;
 }
 
-.login-input input[type="text"],
-.login-input input[type="password"] {
-  border-radius: 20px;
-  border: none;
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  min-height: 44px;
-  padding: 3px 10px;
-  margin-top: 10px;
+.table {
+  background-color: white;
+  border-radius: 30px;
 }
 
-.form-label {
-  font-size: 15px;
-}
-
-/* .form-control {
-  font-size: 4px;
-} */
-
-.register-form .btn-register,
-.login-form .btn-login {
-  height: 35px;
-  border-radius: 10px;
-  font-weight: 700;
-  min-width: 100px;
-  margin-top: 20px;
-  background-color: #f97b22;
-  color: white;
+.button-container {
   border: none;
+  background: none;
+  padding: 0;
   cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.register-form .btn-register,
-.login-form .btn-login:hover {
-  background-color: #f97b22;
-}
-
-.login-form .link {
-  color: #f97b22;
-}
-
-#search-addon {
-  background-color: #f97b22;
-  border-radius: 10px;
-  margin-left: 10px;
-}
-
-#search-addon {
-  background-color: #f97b22;
-  border-radius: 10px;
-  margin-left: 10px;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px;
 }

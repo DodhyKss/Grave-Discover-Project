@@ -45,7 +45,7 @@ class Header extends HTMLElement {
           dunia. Pesan jasa untuk merawat makam orang terkasih dan temukan
           makam mereka dengan kenangan indah yang ditinggalkan di sini.
         </p>
-        <button class="btn-detail">Detail</button>
+        
       </div>
     </div>
   </div>

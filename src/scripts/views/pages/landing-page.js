@@ -33,6 +33,9 @@ const LandingPage = {
     const headerBg = document.querySelector("header");
     headerBg.classList.remove("remove-background");
     headerBg.style.height = "800px";
+
+    const formElement = document.querySelector(".formpesanan");
+    formElement.classList.add("remove-content");
   },
 };
 

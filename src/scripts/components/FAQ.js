@@ -5,7 +5,7 @@ class FAQ extends HTMLElement {
 
   render() {
     this.innerHTML = `
-        <section class="FAQ-container">
+        <section id="FAQ" class="FAQ-container">
         <div>
         <h1 class=" text-white text-center">Yang Sering <span class="orangefont">Ditanyakan</span></h1>
        </div>
