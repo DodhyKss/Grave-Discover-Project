@@ -33,7 +33,9 @@ const LandingPage = {
     const headerBg = document.querySelector('header');
     headerBg.classList.remove('remove-background');
     headerBg.style.height = "800px";
-    
+
+    const table = document.querySelector('');
+    table.classList.add('remove-content');
   },
 };
 

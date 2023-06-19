@@ -23,14 +23,14 @@ class TeamSection extends HTMLElement {
             </div>
             <div class="card-profile col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <div class="team-profiles-pic">
-                <img src="./img/blankpic.png" alt="Team Picture">
+                <img src="./img/DodhyProfilePic.jpg" alt="Team Picture">
                 </div>
               <h4><strong>Dodhy Kurniawan</strong></h4>
               <h5>Frontend Developer</h5>
               <div class="icons-block d-flex justify-content-center">
-                <a href="" target="_blank"><i class="fab fa-github" alt="Github-icon"></i></a>
-                <a href="" target="_blank"><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
-                <a href="" target="_blank"><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
+                <a href="https://github.com/DodhyKss/" target="_blank"><i class="fab fa-github" alt="Github-icon"></i></a>
+                <a href="https://www.instagram.com/ddhyy_/?igshid=MzRlODBiNWFlZA" target="_blank"><i class="fab fa-instagram" alt="Instagram-icon"></i></a>
+                <a href="https://www.linkedin.com/in/dodhy-kurniawan-ss-1bb1a91bb" target="_blank"><i class="fab fa-linkedin" alt="Linkedin-icon"></i></a>
               </div>
             </div>
             <div class="card-profile col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
