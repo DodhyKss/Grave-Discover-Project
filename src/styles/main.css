@@ -39,7 +39,7 @@ main {
 }
 
 .navbar-toggler {
-  background-color: #f97b22;
+  background-color: #f97b22 !important;
 }
 
 .app-bar__brand img {
@@ -65,17 +65,12 @@ main {
 }
 
 .nav-link:hover {
-  color: #f97b22;
+  color: #f97b22 !important;
   cursor: pointer;
 }
 
 .app-bar button {
   border: none;
-}
-
-.app-bar .btn-masuk {
-  border: 1.5px solid white;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .app-bar button:hover {
@@ -101,17 +96,19 @@ main {
   color: black;
 }
 
-.btn-masuk {
+.btn-masuk a {
   color: white;
   font-weight: bold;
   background-color: transparent;
   border-radius: 20px;
-  border-color: white;
+  border: 1.5px solid white;
   padding: 7px 30px;
   margin-right: 5px;
+  list-style: none;
+  text-decoration: none;
 }
 
-.btn-daftar {
+.btn-daftar a {
   color: white;
   font-weight: bold;
   background-color: #f97b22;
@@ -119,14 +116,16 @@ main {
   border-color: #f97b22;
   padding: 7px 30px;
   margin-right: 5px;
+  list-style: none;
+  text-decoration: none;
 }
 
-.btn-daftar:hover {
+.btn-daftar a:hover {
   background-color: white;
   color: #f97b22;
 }
 
-.btn-masuk:hover {
+.btn-masuk a:hover {
   background-color: #f97b22;
   color: white;
 }
@@ -158,7 +157,7 @@ p {
 
 .img-jumbotron img {
   width: 100%;
-  -webkit-filter: brightness(40%);
+  -webkit-filter: brightness(70%) !important;
   margin-top: -100px;
   z-index: 1;
 }
@@ -175,15 +174,16 @@ p {
 }
 
 .btn-detail {
-  background-color: #f97b22;
-  border-radius: 20px;
-  border-color: #f97b22;
-  padding: 7px 30px;
+  background-color: #f97b22 !important;
+  border-radius: 20px !important;
+  border-color: #f97b22 !important;
+  padding: 7px 30px !important;
 }
 
 .btn-detail:hover {
-  background-color: white;
-  color: #f97b22;
+  background-color: white !important;
+  color: #f97b22 !important;
+  border: none;
 }
 /* //About Section */
 .about {
@@ -324,7 +324,7 @@ p {
 
 /* // FAQ Dropdown */
 .FAQ-container {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .FAQ {
@@ -338,9 +338,9 @@ p {
 }
 
 .accordion-button {
-  background-color: #f97b22;
+  background-color: #f97b22 !important;
   &:not(.collapsed) {
-    background-color: #eb690c;
+    background-color: #eb690c !important;
   }
 }
 
@@ -349,6 +349,15 @@ p {
 .icons-block {
   
 } */
+
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-section h1 {
+  padding-bottom: 55px;
+}
 
 .icons-block a {
   list-style: none;
@@ -387,7 +396,7 @@ p {
 
 .card-profile {
   background-color: #ffff;
-  width: 245px;
+  width: 245px !important;
   height: 320px;
   border-radius: 10px;
   margin: 13px;
@@ -396,10 +405,17 @@ p {
 /* //footer */
 
 footer {
+  position: relative;
   width: 100%;
-  height: auto;
-  background: white;
-  padding: 50px;
+  height: 60px; /* Height of the footer */
+  background: #f6f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 13px;
 }
 
 /* Login */
@@ -487,4 +503,16 @@ footer {
 
 .login-form .link {
   color: #f97b22;
+}
+
+#search-addon {
+  background-color: #f97b22;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+#search-addon {
+  background-color: #f97b22;
+  border-radius: 10px;
+  margin-left: 10px;
 }

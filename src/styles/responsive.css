@@ -27,6 +27,10 @@
     h4.text-white {
         font-size: larger;
     }
+
+    footer {
+        height:45px;
+    }
 }
   
 @media screen and (min-width: 650px) {
@@ -41,14 +45,23 @@
     .why-use-title {
         font-size:17px;
     }
+    
 }
   
 @media screen and (min-width: 768px) {
     .wu-box {
         max-height:275px;
     }
+
+    .dashboard-container {
+        margin-left:280px !important;
+    }
+
+    .divparent{
+    margin-left:-20px;
+    }
 }
-  
+
 @media screen and (min-width:900px) {
     .wu-box {
         position: relative;
@@ -56,9 +69,15 @@
         border-radius: 10px;
         transition: 0.3s ease;
         z-index: 100;
-        min-height: 200px;
+        min-height: 264px;
         max-height:280px;
       }   
+}
+
+@media screen and (max-width:990px) {
+    .navbar-collapse {
+        background-color:#f97b22;
+    }
 }
 
 @media screen and (min-width:1200px){
@@ -66,6 +85,8 @@
         max-width: 1200px;
         }   
     
- 
+    .divparent {
+    margin-left: 15%;
+    }
 }
   

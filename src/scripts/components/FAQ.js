@@ -1,10 +1,10 @@
 class FAQ extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <section class="FAQ-container">
         <div>
         <h1 class=" text-white text-center">Yang Sering <span class="orangefont">Ditanyakan</span></h1>
@@ -19,7 +19,7 @@ class FAQ extends HTMLElement {
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>Grave Discover</strong> merupakan aplikasi berbasis website untuk memudahkan pengurus makam dalam mengelola pemakaman. Aplikasi ini juga memudahkan pengguna untuk melakukan pemesanan perawatan makam dan mencari lokasi makam yang akan dikunjungi. 
+                <strong>Grave Discover</strong> merupakan aplikasi berbasis website untuk memudahkan pengurus makam dalam mengelola pemakaman. Aplikasi ini juga memudahkan untuk melakukan pendataan pesanan perawatan makam dan mencari lokasi makam yang akan dikunjungi. 
               </div>
             </div>
           </div>
@@ -34,7 +34,6 @@ class FAQ extends HTMLElement {
                 <ul>
                   <li>Masuk ke halaman beranda terlebih dahulu.</li>
                   <li>Pilih fitur “Data Makam”.</li>
-                  <li>Silakan klik tombol “Tambah Data” </li>
                   <li>Isi dengan lengkap formulir data jenazah, lalu klik “Simpan”.</li>
                   <li>Selesai, data makam telah ditambahkan.</li>
                 </ul>
@@ -44,18 +43,16 @@ class FAQ extends HTMLElement {
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h4 class="text-white">Bagaimana cara memesan perawatan makan?</h4>
+                <h4 class="text-white">Bagaimana cara menambah data pesanan perawatan makan?</h4>
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <ul>
                   <li>Masuk ke halaman beranda terlebih dahulu.</li>
-                  <li>Pilih fitur “Pesan Perawatan Makam”.</li>
-                  <li>Silakan klik tombol “Pesan </li>
-                  <li>Isi dengan lengkap formulir pemesanan, lalu klik “Pesan”.</li>
-                  <li>Selesai, pesanan Anda akan segera di lakukan.</li>
-                  <li>Cek secara berkala agar Anda mengetahui bahwa pesanan telah dikerjakan selesai.</li>
+                  <li>Pilih fitur “Perawatan Makam”.</li>
+                  <li>Isi dengan lengkap formulir pemesanan, lalu klik “Simpan”.</li>
+                  <li>Selesai, data tersimpan dan perawatan akan segera di lakukan.</li>
                 </ul>
               </div>
             </div>
@@ -70,7 +67,7 @@ class FAQ extends HTMLElement {
               <div class="accordion-body">
                 <ul>
                   <li>Masuk ke halaman beranda terlebih dahulu.</li>
-                  <li>Pilih fitur “Cari Lokasi”.</li>
+                  <li>Pilih fitur “Data Makam”.</li>
                   <li>Masukkan nama lengkap jenazah dengan benar. </li>
                   <li>Klik pada tombol “cari” maka lokasi makam akan ditampilkan.</li>
                 </ul>
@@ -80,8 +77,8 @@ class FAQ extends HTMLElement {
         </div>
        </div> 
       </section>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('faq-page', FAQ);
+customElements.define("faq-page", FAQ);
